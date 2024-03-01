@@ -435,10 +435,10 @@ async def lego(event):
     quew = event.pattern_match.group(1)
     if event.sender_id != OWNER_ID and not quew:
         await event.reply(
-            "๏`ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙᴇ​ !`\n๏`ᴇxᴀᴍᴘʟᴇ /logo <SASHIKANT>`"
+            "๏`ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ʙᴀʙᴇ !`\n๏`ᴇxᴀᴍᴘʟᴇ /logo <SASHIKANT>`"
         )
         return
-    pesan = await event.reply("**๏ ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʟᴏɢᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ sᴇᴄ​...**")
+    pesan = await event.reply("**๏ ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʟᴏɢᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ sᴇᴄ...**")
     try:
         text = event.pattern_match.group(1)
         randc = random.choice(LOGO_LINKS)
