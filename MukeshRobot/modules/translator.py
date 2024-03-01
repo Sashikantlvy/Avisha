@@ -80,7 +80,7 @@ from telethon import __version__ as s
 from MukeshRobot import OWNER_ID, dispatcher
 from MukeshRobot import pbot as client
 
-Mukesh = "https://graph.org/file/f86b71018196c5cfe7344.jpg"
+Mukesh = "https://telegra.ph/file/6f04cb09ff8e8af19ae02.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
@@ -108,11 +108,11 @@ async def repo(client, message):
 @app.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/2e0d941212829173c69e8.mp4", has_spoiler=True),
+        media=InputMediaVideo("https://telegra.ph/file/4e53eb338228f563c984e.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
-                [back_button]
+                [close_button]
             ]
         ),
         )
-back_button = InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="mukesh_back")
+close_button = InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
