@@ -9,7 +9,7 @@ from MukeshRobot.utils.errors import capture_err
 @capture_err
 async def github(_, message):
     if len(message.command) != 2:
-        return await message.reply_text("/github {username} \n`/github nykaaxbot`")
+        return await message.reply_text("/github {username} \n`/github THEMADMAXPRO`")
     username = message.text.split(None, 1)[1]
     URL = f"https://api.github.com/users/{username}"
     async with ClientSession() as session:
@@ -48,7 +48,7 @@ async def github(_, message):
 ๏ ғᴏʟʟᴏᴡᴇʀs ➠ {followers}
 ๏ ғᴏʟʟᴏᴡɪɴɢ ➠ {following}
 
-๏ ᴍᴀᴅᴇ ʙʏ ➠ [ʀᴏʏ-ᴇᴅɪᴛx](https://t.me/roy_editx)"""
+๏ ᴍᴀᴅᴇ ʙʏ ➠ [𝐒∆𝐒𝐇𝐈𝐊∆𝐍𝐓](https://t.me/ABOUT_SASHIKANT/3)"""
             except Exception as e:
                 await message.reply(f"#ERROR {e}")
                   
