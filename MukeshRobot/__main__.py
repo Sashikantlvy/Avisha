@@ -98,7 +98,7 @@ buttons = [
 
 roy = [
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/roy_editx"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/STATUSDAIRY2"),
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -448,7 +448,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(
                             text="ʜᴇʟᴘ ᴍᴇɴᴜ", callback_data="Main_help"
                         ),
-                        InlineKeyboardButton(text="ɴʏᴋᴀᴀ ", url="https://t.me/nykaa_update"),
+                        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/STATUSDAIRY2"),
                     ],
                     [
                         InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="mukesh_back"),
@@ -467,7 +467,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/roy_editx"
+                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/STATUSDAIRY2"
                         ),
                     ],
                     [
@@ -1132,7 +1132,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
-                            url="https://t.me/avishaxbot?startgroup=true"
+                            url="https://t.me/emma_x_robot?startgroup=true"
                             )
                        ]
                 ]
@@ -1145,7 +1145,7 @@ def main():
                 caption=f"""
 ✦ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ✦
      ━━━━━━━━ 🝮✿🝮 ━━━━━━━━
-**❅ ᴍᴀᴅᴇ ʙʏ ➛ [ʀᴏʏ-ᴇᴅɪᴛx](https://t.me/roy_editx)**
+**❅ ᴍᴀᴅᴇ ʙʏ ➛ [𝐒∆𝐒𝐇𝐈𝐊∆𝐍𝐓](https://t.me/about_sashikant/3)**
 **❅ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ➛** `{y()}`
 **❅ ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ ➛** `{telever}`
 **❅ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ➛** `{tlhver}`
