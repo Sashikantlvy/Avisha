@@ -8,7 +8,7 @@ from MukeshRobot import pbot
 
 @pbot.on_message(filters.command(["wall", "wallpaper"]))
 async def wall(_, message: Message):
-    "❍ ғɪxᴇᴅ ᴡᴀʟʟ ʙʏ ʀᴏʏ-ᴇᴅɪᴛx"
+    "❍ ғɪxᴇᴅ ᴡᴀʟʟ ʙʏ 𝐒∆𝐒𝐇𝐈𝐊∆𝐍𝐓"
     try:
         text = message.text.split(None, 1)[1]
     except IndexError:
