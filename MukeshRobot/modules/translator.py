@@ -80,42 +80,14 @@ from telethon import __version__ as s
 from MukeshRobot import OWNER_ID, dispatcher
 from MukeshRobot import pbot as client
 
-Mukesh = "https://telegra.ph/file/6f04cb09ff8e8af19ae02.jpg"
-
-
-@client.on_message(filters.command(["repo", "source"]))
-async def repo(client, message):
-    await message.reply_photo(
-        photo=Mukesh,
-        caption=f"""**❍ ʜᴇʏ {message.from_user.mention()}, ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ !\n\n❍ ɪ ᴀᴍ [{dispatcher.bot.first_name}](t.me/{dispatcher.bot.username})**\n\n❍ **ɪғ ʏᴏᴜ ᴡᴀɴᴛ ๛ᴀ ᴠ ɪ s ʜ ᴀ ༗ ʙᴏᴛ ʀᴇᴘᴏ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʀᴇᴘᴏ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ.**
-""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "ᴏᴡɴᴇʀ",user_id=OWNER_ID
-                    ),
-                    InlineKeyboardButton(
-                        "ʀᴇᴘᴏ",
-                        callback_data="gib_source",
-                    ),
-                ]
-            ]
-        ),
-    )
-
-
 @app.on_callback_query(filters.regex("gib_source"))
-async def support(client, CallbackQuery, _):
-    await CallbackQuery.edit_message_text(
-        text="ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴀ ʀᴇᴘᴏ, ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴠᴇʟᴏᴘᴇʀ](HTTPS://T.ME/SASHIKANT_XD)",
+async def gib_repo_callback(_, callback_query):
+    await callback_query.edit_message_media(
+        media=InputMediaVideo("https://telegra.ph/file/9235d57807362b4e227a3.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"mukesh_back"
-                    )
-                ],
+                [close_button]
             ]
         ),
-    )
+        )
+close_button = InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
