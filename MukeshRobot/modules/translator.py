@@ -105,14 +105,21 @@ async def repo(client, message):
     )
 
 
-@app.on_callback_query(filters.regex("gib_source"))
-async def gib_repo_callback(_, callback_query):
-    await callback_query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/9235d57807362b4e227a3.mp4", has_spoiler=True),
+@app.on_callback_query(filters.regex("gib_source") & ~BANNED_USERS)
+@languageCB
+async def gib_repo(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_media(
+     InputMediaVideo("https://telegra.ph/file/2e0d941212829173c69e8.mp4", has_spoiler=True, caption="ɢᴜʏs ᴋᴜᴄʜ ʙᴀᴀᴛ ᴀɪsᴇ ʜᴏᴛɪ ʜᴀɪ ʙᴀᴛᴀɪ ɴʜɪ ᴊᴀᴀᴛɪ\nʙᴏʜᴏᴛ ᴅᴜᴋʜ ʜᴀɪ ɢᴜʏs😂\n\nᴄʜᴀʟᴀᴊᴀ ʙʜᴏsᴅɪᴋᴇ😂"),
         reply_markup=InlineKeyboardMarkup(
             [
-                [close_button]
+                [
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"Main_help"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴄʟᴏsᴇ", callback_data=f"close"
+                    ),
+                ]
             ]
         ),
-        )
-close_button = InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
+    )
