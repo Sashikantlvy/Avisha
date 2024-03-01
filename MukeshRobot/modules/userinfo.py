@@ -323,10 +323,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url=f"https://t.me/RoY_Editx/882"
+                                "ʜᴇᴀʟᴛʜ", url=f"https://t.me/statusdairy2/310"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/RoY_Editx/881"
+                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/statusdairy2/311"
                             ),
                         ],
                         [
@@ -349,10 +349,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/RoY_Editx/882"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/statusdairy2/310"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/RoY_Editx/881"
+                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/statusdairy2/311"
                             ),
                         ],
                         [
