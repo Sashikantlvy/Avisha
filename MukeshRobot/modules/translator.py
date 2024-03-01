@@ -106,13 +106,16 @@ async def repo(client, message):
 
 
 @app.on_callback_query(filters.regex("gib_source"))
-async def gib_repo_callback(_, callback_query):
-    await callback_query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/4e53eb338228f563c984e.mp4", has_spoiler=True),
+async def support(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_text(
+        text="ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴀ ʀᴇᴘᴏ, ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴠᴇʟᴏᴘᴇʀ](HTTPS://T.ME/SASHIKANT_XD)",
         reply_markup=InlineKeyboardMarkup(
             [
-                [close_button]
+                [
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"Mukesh_back"
+                    )
+                ],
             ]
         ),
-        )
-close_button = InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
+    )
