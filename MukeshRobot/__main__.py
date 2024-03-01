@@ -86,7 +86,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="gib_source"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="HTTPS://T.ME/VOICEOFHEART0"),
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="mukesh_"),
     ],
     [
