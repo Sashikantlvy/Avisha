@@ -111,14 +111,8 @@ async def gib_repo_callback(_, callback_query):
      InputMediaVideo("https://telegra.ph/file/2e0d941212829173c69e8.mp4", has_spoiler=True, caption="ɢᴜʏs ᴋᴜᴄʜ ʙᴀᴀᴛ ᴀɪsᴇ ʜᴏᴛɪ ʜᴀɪ ʙᴀᴛᴀɪ ɴʜɪ ᴊᴀᴀᴛɪ\nʙᴏʜᴏᴛ ᴅᴜᴋʜ ʜᴀɪ ɢᴜʏs😂\n\nᴄʜᴀʟᴀᴊᴀ ʙʜᴏsᴅɪᴋᴇ😂"),
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"mukesh_back"
-                    ),
-                    InlineKeyboardButton(
-                        text="ᴄʟᴏsᴇ", callback_data=f"close"
-                    ),
-                ]
+                [close_button]
             ]
         ),
-    )
+        )
+close_button = InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
